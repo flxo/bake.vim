@@ -11,10 +11,10 @@ syn keyword	bakeTodo contained TODO FIXME XXX
 syn match bakeComment "^#.*" contains=bakeTodo
 syn match bakeComment "\s#.*"ms=s+1 contains=bakeTodo
 syn keyword bakeProject CustomConfig Description ExecutableConfig LibraryConfig Person Project Responsible RequiredBakeVersion
-syn keyword bakeStatement ArtifactName DefaultToolchain Dependency Dependency ExternalLibrary ExternalLibrarySearchPath LinkerScript MapFile PostSteps PreSteps Set Toolchain UserLibrary
+syn keyword bakeStatement ArtifactName DefaultToolchain Dependency Dependency ExitSteps ExternalLibrary ExternalLibrarySearchPath LinkerScript MapFile Prebuild PostSteps PreSteps StartupSteps Set Toolchain UserLibrary
 syn keyword bakeInclude ExcludeFiles Files IncludeDir
-syn keyword bakeOption add command default eclipseOrder email extends filter inherit inject lib minimum maximum off on outputDir pathTo search target validExitCodes
-syn keyword bakeConfig CommandLine Define Docu Flags InternalDefines InternalIncludes LibPostfixFlags LibPrefixFlags LintPolicy Makefile
+syn keyword bakeOption add command cmd config default eclipseOrder email env extends filter inherit inject lib minimum maximum off on outputDir pathTo remove search target value validExitCodes
+syn keyword bakeConfig CommandLine Define Docu Except Flags InternalDefines InternalIncludes LibPostfixFlags LibPrefixFlags LintPolicy Makefile
 syn keyword bakeCommand ASM Archiver C CPP Compiler Linker
 syn region bakeString start=+"+ skip=+\\\\\|\\"+ end=+"+ oneline
 
