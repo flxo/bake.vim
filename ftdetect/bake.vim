@@ -9,3 +9,4 @@ if did_filetype()
 endif
 
 au BufRead,BufNewFile bakefile,Project.meta setfiletype bake | set filetype=bake
+au BufRead,BufNewFile bakefile,Adapt.meta setfiletype bake | set filetype=bake
