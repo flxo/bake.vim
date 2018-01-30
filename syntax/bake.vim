@@ -1,7 +1,7 @@
 " Vim syntax file
 " Language:	    bake project files
 " Maintainer:	Felix Obenhuber <felix@obenhuber.de>
-" Last Change:	2015 Jan 11
+" Last Change:	2018 Jan 30
 
 if exists("b:current_syntax")
     finish
@@ -13,7 +13,7 @@ syn match bakeComment "\s#.*"ms=s+1 contains=bakeTodo
 syn keyword bakeProject Adapt CustomConfig Description ExecutableConfig If LibraryConfig Person Project Responsible RequiredBakeVersion Unless
 syn keyword bakeStatement ArtifactName CleanSteps DefaultToolchain Dependency Dependency ExitSteps ExternalLibrary ExternalLibrarySearchPath LinkerScript MapFile Prebuild PostSteps PreSteps StartupSteps Set Toolchain UserLibrary
 syn keyword bakeInclude ExcludeFiles Files IncludeDir
-syn keyword bakeOption add command cmd config default eclipseOrder email env extends filter inherit inject lib minimum maximum off on outputDir pathTo remove search target value validExitCodes
+syn keyword bakeOption add command cmd config default eclipseOrder email env extend extends filter inherit inject lib minimum maximum off on outputDir pathTo push_front remove replace search target type value validExitCodes
 syn keyword bakeConfig CommandLine Define Docu Except Flags InternalDefines InternalIncludes LibPostfixFlags LibPrefixFlags LintPolicy Makefile
 syn keyword bakeCommand ASM Archiver C CPP Compiler Linker
 syn region bakeString start=+"+ skip=+\\\\\|\\"+ end=+"+ oneline
