@@ -8,5 +8,6 @@ if did_filetype()
     finish
 endif
 
-au BufRead,BufNewFile bakefile,Project.meta setfiletype bake | set filetype=bake
 au BufRead,BufNewFile bakefile,Adapt.meta setfiletype bake | set filetype=bake
+au BufRead,BufNewFile bakefile,Collection.meta setfiletype bake | set filetype=bake
+au BufRead,BufNewFile bakefile,Project.meta setfiletype bake | set filetype=bake
