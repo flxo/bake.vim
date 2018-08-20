@@ -14,7 +14,7 @@ syn keyword bakeProject Adapt CustomConfig Description ExecutableConfig If Libra
 syn keyword bakeStatement ArtifactName CleanSteps DefaultToolchain Dependency Dependency ExitSteps ExternalLibrary ExternalLibrarySearchPath LinkerScript MapFile Prebuild PostSteps PreSteps StartupSteps Set Toolchain UserLibrary
 syn keyword bakeInclude ExcludeFiles Files IncludeDir
 syn keyword bakeOption add command cmd config default eclipseOrder email env extend extends filter inherit inject lib minimum maximum off on outputDir pathTo push_front remove replace search target type value validExitCodes
-syn keyword bakeConfig CommandLine Define Docu Except Flags InternalDefines InternalIncludes LibPostfixFlags LibPrefixFlags LintPolicy Makefile
+syn keyword bakeConfig CommandLine Copy Define Docu Except Flags InternalDefines InternalIncludes LibPostfixFlags LibPrefixFlags LintPolicy MakeDir Makefile Move Remove Sleep Touch
 syn keyword bakeCommand ASM Archiver C CPP Compiler Linker
 syn region bakeString start=+"+ skip=+\\\\\|\\"+ end=+"+ oneline
 
